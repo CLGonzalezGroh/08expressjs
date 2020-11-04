@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 function getKeysFromOptions(options) {
+  console.log(options);
   const { settings, _locals, ...objectKeys } = options;
   return Object.keys(objectKeys);
 }
